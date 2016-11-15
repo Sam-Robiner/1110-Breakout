@@ -1,0 +1,31 @@
+EXTENSIONS:
+1. Every 5 times the ball bounces on the paddle, the vx and vy are multiplied by
+a constant, speeding up the ball. When the player loses a life or starts a new game,
+the ball goes back to its original speed.
+
+2. The angle at which the ball bounces off the paddle depends on where on the paddle it bounces.
+This allows the user to aim the ball somewhat. Every time the ball bounces on the paddle, the
+x-coordinate of the center of the paddle is subtracted from the ball's x-coordinate. The result is
+multiplied by a constant and added to the ball's vx.
+
+3. The player now earns points for destroying bricks. The number of points depends on the brick color,
+with lower colors being worth fewer points. The number of points the player has is stored in an isntance
+attribute in class Play.During the game, the number of points is displayed in a
+GLabel in the top right corner of the window. At the end of the game, if the player wins, the number of
+points is displayed.
+
+4. Every time the ball hits a brick, there is a 1 in 4 chance that a Falling
+Points power-up will be created. These power-ups are little pink boxes containing
+a certain number of points, that fall down from the brick at which they were created.
+If the player "catches" the box with the paddle, they are awarded the given number of points.
+A small message is displayed for a brief amount of time. A new class FallingPoints handles
+the functionality for this extension.
+
+
+MODIFICATIONS:
+1. Instead of being served from the middle of the window, the ball is now served from slightly
+higher than the middle. I found it hard to react with the ball starting so low. Also, the serve angle
+is a bit narrower than the instructions specify.
+
+2. The initial speed of the ball is smaller than the instructions specify, because it speeds
+up over time.
