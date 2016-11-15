@@ -10,9 +10,11 @@ The player has 3 lives per game. A life is lost when the player misses the ball 
 are eliminated.
 
 EXTRA FEATURES DESCRIPTION:
--The angle of the ball bouncing off the paddle depends on where the ball hits on the paddle.
--Occasionally, small red boxes containing a certain number of points is dropped from a brick when it is hit by the ball. Get these
- points by catching the box with the paddle. The number of points in the box increases for bricks in higher rows, but they will also
- drop faster!
--The ball speeds up over time, making it harder for the player to survive. When the player loses a new life, the speed of the ball
+The angle of the ball bouncing off the paddle depends on where the ball hits on the paddle.
+
+Occasionally, small red boxes containing a certain number of points is dropped from a brick when it is hit by the ball. Get these
+points by catching the box with the paddle. The number of points in the box increases for bricks in higher rows, but they will also
+drop faster!
+
+The ball speeds up over time, making it harder for the player to survive. When the player loses a new life, the speed of the ball
  resets to its original slower speed.
